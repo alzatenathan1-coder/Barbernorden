@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Servicios de Norden Barber en Cuenca: cortes clásicos, degradados, arreglo de barba y paquetes completos. Barbería de referencia en Castilla-La Mancha.">
+    <meta name="keywords" content="servicios barbería Cuenca, corte degradado Cuenca, arreglo de barba Cuenca, skin fade Cuenca, barbería Castilla-La Mancha">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Servicios | Norden Barber — Barbería en Cuenca">
+    <meta property="og:description" content="Cortes clásicos, degradados, arreglo de barba y paquetes completos en Norden Barber, barbería de referencia en Cuenca, Castilla-La Mancha.">
+    <meta property="og:locale" content="es_ES">
+    <title>Nuestros Servicios | Norden Barber — Barbería en Cuenca, Castilla-La Mancha</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+    <link rel="shortcut icon" href="assets/images/favicon-logo.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-4.5.3.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "Norden Barber",
+      "description": "Barbería de referencia en Cuenca, Castilla-La Mancha, España.",
+      "url": "https://www.nordenbarber.es/services.html",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cuenca",
+        "addressRegion": "Castilla-La Mancha",
+        "postalCode": "16002",
+        "addressCountry": "ES"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de barbería en Cuenca",
+        "itemListElement": [
+          {"@type": "Offer", "name": "Corte caballero clásico", "price": "12.00", "priceCurrency": "EUR"},
+          {"@type": "Offer", "name": "Corte caballero degradado", "price": "13.90", "priceCurrency": "EUR"},
+          {"@type": "Offer", "name": "Corte degradado + barba + peinado", "price": "16.00", "priceCurrency": "EUR"},
+          {"@type": "Offer", "name": "Corte de cabello + barba + peinado", "price": "18.00", "priceCurrency": "EUR"},
+          {"@type": "Offer", "name": "Corte + barba perfilada", "price": "18.00", "priceCurrency": "EUR"},
+          {"@type": "Offer", "name": "Corte + arreglo de barba completo", "price": "22.00", "priceCurrency": "EUR"}
+        ]
+      }
+    }
+    </script>
+    <style>
+        :root { --gold: #c8a951; --dark: #111111; --dark-2: #1a1a1a; }
+        body { font-family: 'Rubik', sans-serif; }
+
+        .nb-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 9999; background: rgba(17,17,17,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(200,169,81,0.2); transition: all 0.3s ease; }
+        .nb-header.scrolled { background: rgba(10,10,10,0.99); border-bottom-color: rgba(200,169,81,0.4); }
+        .nb-header-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+        .nb-logo img { height: 72px; width: auto; }
+        .nb-nav { display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; }
+        .nb-nav a { font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: #cccccc; transition: color 0.3s; }
+        .nb-nav a:hover, .nb-nav a.active { color: var(--gold); }
+        .nb-btn-reservar { font-family: 'Oswald', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; background: var(--gold); color: #111 !important; padding: 10px 22px; border-radius: 2px; transition: all 0.3s; white-space: nowrap; }
+        .nb-btn-reservar:hover { background: #b8942e; color: #fff !important; }
+        .nb-btn-whatsapp { display: inline-flex; align-items: center; gap: 10px; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; background: #25D366; color: #fff; padding: 14px 30px; border-radius: 2px; transition: all 0.3s; }
+        .nb-btn-whatsapp:hover { background: #128C7E; color: #fff; transform: translateY(-2px); }
+        .nb-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+        .nb-hamburger span { display: block; width: 26px; height: 2px; background: #fff; transition: all 0.3s; }
+        .nb-mobile-menu { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: rgba(10,10,10,0.99); border-top: 1px solid rgba(200,169,81,0.3); padding: 24px 20px; flex-direction: column; gap: 20px; }
+        .nb-mobile-menu.open { display: flex; }
+        .nb-mobile-menu a { font-family: 'Oswald', sans-serif; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: #ccc; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+        .nb-mobile-menu a:hover { color: var(--gold); }
+        .nb-mobile-menu .nb-btn-reservar { text-align: center; margin-top: 8px; border-bottom: none; }
+
+        .nb-page-banner { background: url('assets/images/services/service-bg.jpg') center/cover no-repeat; position: relative; padding: 160px 0 80px; text-align: center; }
+        .nb-page-banner::before { content: ''; position: absolute; inset: 0; background: rgba(10,10,10,0.85); }
+        .nb-page-banner-content { position: relative; z-index: 1; }
+        .nb-page-banner h1 { font-family: 'Oswald', sans-serif; font-size: clamp(30px, 5vw, 58px); font-weight: 700; text-transform: uppercase; color: #fff; margin-bottom: 14px; }
+        .nb-page-banner h1 span { color: var(--gold); }
+        .nb-breadcrumb { display: flex; justify-content: center; gap: 10px; list-style: none; margin: 0; padding: 0; }
+        .nb-breadcrumb li { font-size: 13px; color: rgba(255,255,255,0.5); letter-spacing: 1px; }
+        .nb-breadcrumb li a { color: var(--gold); }
+        .nb-breadcrumb li + li::before { content: '/'; margin-right: 10px; }
+
+        section { padding: 90px 0; }
+        .nb-section-label { font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+        .nb-section-title { font-family: 'Oswald', sans-serif; font-size: clamp(28px, 4vw, 44px); font-weight: 700; color: #111; text-transform: uppercase; line-height: 1.15; margin-bottom: 16px; }
+        .nb-section-title span { color: var(--gold); }
+        .nb-section-title.white { color: #fff; }
+
+        .nb-svc-card { border: 1px solid #eee; padding: 0; overflow: hidden; transition: all 0.4s; height: 100%; display: flex; flex-direction: column; }
+        .nb-svc-card:hover { border-color: var(--gold); box-shadow: 0 8px 40px rgba(200,169,81,0.12); transform: translateY(-4px); }
+        .nb-svc-card-img { width: 100%; height: 220px; object-fit: cover; }
+        .nb-svc-card-body { padding: 32px 28px; flex: 1; display: flex; flex-direction: column; }
+        .nb-svc-card-icon { font-size: 28px; color: var(--gold); margin-bottom: 16px; }
+        .nb-svc-card-body h3 { font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase; color: #111; margin-bottom: 10px; }
+        .nb-svc-card-body p { font-size: 14px; color: #666; line-height: 1.75; flex: 1; margin-bottom: 20px; }
+        .nb-svc-meta { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid #f0f0f0; }
+        .nb-svc-meta .price { font-family: 'Oswald', sans-serif; font-size: 22px; font-weight: 700; color: var(--gold); }
+        .nb-svc-meta .duration { font-size: 12px; color: #999; letter-spacing: 1px; }
+        .nb-svc-badge { display: inline-block; font-family: 'Oswald', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; margin-bottom: 12px; }
+        .nb-svc-badge.recomendado { background: rgba(200,169,81,0.12); color: var(--gold); border: 1px solid rgba(200,169,81,0.3); }
+        .nb-svc-badge.elite { background: var(--gold); color: #111; }
+
+        .nb-why { background: var(--dark-2); }
+        .nb-why-item { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 40px; }
+        .nb-why-num { font-family: 'Oswald', sans-serif; font-size: 48px; font-weight: 700; color: rgba(200,169,81,0.15); line-height: 1; flex-shrink: 0; width: 60px; }
+        .nb-why-text h4 { font-family: 'Oswald', sans-serif; font-size: 17px; font-weight: 600; text-transform: uppercase; color: #fff; margin-bottom: 8px; }
+        .nb-why-text p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.7; margin: 0; }
+
+        .nb-cta { background: var(--gold); padding: 70px 0; }
+        .nb-cta h2 { font-family: 'Oswald', sans-serif; font-size: clamp(24px, 4vw, 42px); font-weight: 700; text-transform: uppercase; color: #111; margin: 0; line-height: 1.2; }
+        .nb-btn-dark { display: inline-flex; align-items: center; gap: 10px; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; background: #111; color: #fff; padding: 14px 30px; border-radius: 2px; transition: all 0.3s; white-space: nowrap; }
+        .nb-btn-dark:hover { background: #000; color: var(--gold); }
+        .nb-btn-primary { display: inline-flex; align-items: center; gap: 10px; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; background: var(--gold); color: #111; padding: 14px 30px; border-radius: 2px; transition: all 0.3s; }
+        .nb-btn-primary:hover { background: #b8942e; color: #fff; }
+        .nb-btn-outline { display: inline-flex; align-items: center; gap: 10px; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; background: transparent; color: #111; padding: 13px 30px; border: 1px solid rgba(17,17,17,0.3); border-radius: 2px; transition: all 0.3s; }
+        .nb-btn-outline:hover { border-color: #111; }
+
+        .nb-footer { background: #0a0a0a; border-top: 1px solid rgba(200,169,81,0.2); padding: 70px 0 0; }
+        .nb-footer-logo img { height: 48px; width: auto; margin-bottom: 20px; }
+        .nb-footer-desc { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.75; margin-bottom: 24px; }
+        .nb-footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); font-size: 14px; margin-right: 8px; transition: all 0.3s; border-radius: 2px; }
+        .nb-footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+        .nb-footer-title { font-family: 'Oswald', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #fff; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid rgba(200,169,81,0.3); }
+        .nb-footer-links { list-style: none; padding: 0; margin: 0; }
+        .nb-footer-links li { margin-bottom: 10px; }
+        .nb-footer-links a { font-size: 13px; color: rgba(255,255,255,0.45); transition: color 0.3s; }
+        .nb-footer-links a:hover { color: var(--gold); }
+        .nb-footer-links a::before { content: '— '; color: rgba(200,169,81,0.4); font-size: 10px; }
+        .nb-footer-info-item { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start; }
+        .nb-footer-info-item i { color: var(--gold); font-size: 14px; margin-top: 2px; flex-shrink: 0; }
+        .nb-footer-info-item span { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.6; }
+        .nb-footer-bottom { margin-top: 50px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .nb-footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+        .nb-footer-legal a { font-size: 12px; color: rgba(255,255,255,0.3); margin-left: 20px; transition: color 0.3s; }
+        .nb-footer-legal a:hover { color: var(--gold); }
+
+        .nb-fab { display: none; position: fixed; bottom: 24px; right: 20px; z-index: 9998; background: var(--gold); color: #111; padding: 14px 20px; border-radius: 30px; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; box-shadow: 0 4px 24px rgba(200,169,81,0.4); text-decoration: none; align-items: center; gap: 8px; transition: all 0.3s; }
+        .nb-fab:hover { background: #b8942e; color: #fff; }
+
+        @media (max-width: 991px) { .nb-nav { display: none; } .nb-hamburger { display: flex; } }
+        @media (max-width: 767px) { section { padding: 64px 0; } .nb-fab { display: inline-flex; } .nb-footer-bottom { flex-direction: column; text-align: center; } .nb-footer-legal a:first-child { margin-left: 0; } }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita" target="_blank" rel="noopener" class="nb-fab" aria-label="Escribir por WhatsApp">
+        <i class="fab fa-whatsapp"></i> Reservar cita
+    </a>
+
+    <header class="nb-header" id="nbHeader">
+        <div class="container">
+            <div class="nb-header-inner">
+                <a href="index.html" class="nb-logo" aria-label="Norden Barber — Inicio">
+                    <img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca">
+                </a>
+                <nav aria-label="Navegación principal">
+                    <ul class="nb-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="services.html" class="active">Servicios</a></li>
+                        <li><a href="portfolio.html">Galería</a></li>
+                        <li><a href="pricing.html">Precios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-reservar">Reservar cita</a></li>
+                    </ul>
+                </nav>
+                <button class="nb-hamburger" id="nbHamburger" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <nav class="nb-mobile-menu" id="nbMobileMenu" aria-label="Menú móvil">
+                <a href="index.html">Inicio</a>
+                <a href="services.html">Servicios</a>
+                <a href="portfolio.html">Galería</a>
+                <a href="pricing.html">Precios</a>
+                <a href="contact.html">Contacto</a>
+                <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-reservar">Reservar cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="nb-page-banner" role="banner">
+        <div class="container">
+            <div class="nb-page-banner-content">
+                <h1>Nuestros <span>Servicios</span></h1>
+                <p style="color:rgba(255,255,255,0.6); font-size:15px; margin-bottom:20px;">Norden Barber — Cuenca, Castilla-La Mancha</p>
+                <ul class="nb-breadcrumb">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>Servicios</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section style="background:#fff;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="nb-section-label">Lo que ofrecemos</span>
+                <h2 class="nb-section-title">Servicios de barbería <span>premium</span><br>en Cuenca</h2>
+                <p style="font-size:15px; color:#777; max-width:600px; margin:0 auto; line-height:1.75;">Cada uno de nuestros servicios está diseñado para darte el mejor resultado posible en una sesión de 30 minutos. Escríbenos por WhatsApp o llámanos y llega sin esperas.</p>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <article class="nb-svc-card">
+                        <img src="assets/images/services/service1.jpg" alt="Corte caballero clásico en Norden Barber Cuenca" class="nb-svc-card-img">
+                        <div class="nb-svc-card-body">
+                            <div class="nb-svc-card-icon"><i class="fas fa-cut"></i></div>
+                            <h3>Corte caballero clásico</h3>
+                            <p>El corte de toda la vida, ejecutado con precisión profesional. Incluye el acabado con tijera o máquina según tu preferencia. Perfecto para quienes buscan un look limpio, atemporal y elegante para el día a día o para ocasiones formales.</p>
+                            <div class="nb-svc-meta">
+                                <span class="price">12,00 €</span>
+                                <span class="duration"><i class="far fa-clock mr-1"></i> 30 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <article class="nb-svc-card">
+                        <img src="assets/images/services/service2.jpg" alt="Corte degradado en Norden Barber Cuenca" class="nb-svc-card-img">
+                        <div class="nb-svc-card-body">
+                            <div class="nb-svc-card-icon"><i class="fas fa-magic"></i></div>
+                            <h3>Corte caballero degradado</h3>
+                            <p>El degradado —o fade— es una transición progresiva y limpia desde el cabello más largo en la parte superior hasta un acabado muy corto o rapado en laterales y nuca. Moderno, muy solicitado y difícil de conseguir sin técnica de precisión.</p>
+                            <div class="nb-svc-meta">
+                                <span class="price">13,90 €</span>
+                                <span class="duration"><i class="far fa-clock mr-1"></i> 30 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <article class="nb-svc-card">
+                        <img src="assets/images/services/service3.jpg" alt="Corte degradado con barba y peinado en Norden Barber Cuenca" class="nb-svc-card-img">
+                        <div class="nb-svc-card-body">
+                            <span class="nb-svc-badge recomendado">Recomendado</span>
+                            <div class="nb-svc-card-icon"><i class="fas fa-award"></i></div>
+                            <h3>Degradado + barba + peinado</h3>
+                            <p>Nuestro paquete más popular para el look completo. Corte degradado + arreglo básico de barba (recorte y perfilado de contornos) + peinado con producto de acabado. En una sola sesión de 30 minutos, sales listo para cualquier ocasión.</p>
+                            <div class="nb-svc-meta">
+                                <span class="price">16,00 €</span>
+                                <span class="duration"><i class="far fa-clock mr-1"></i> 30 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <article class="nb-svc-card">
+                        <img src="assets/images/services/service-middle.jpg" alt="Corte de cabello con barba y peinado en Norden Barber Cuenca" class="nb-svc-card-img">
+                        <div class="nb-svc-card-body">
+                            <span class="nb-svc-badge recomendado">Recomendado</span>
+                            <div class="nb-svc-card-icon"><i class="fas fa-crown"></i></div>
+                            <h3>Corte cabello + barba + peinado</h3>
+                            <p>Igual que el anterior pero con corte clásico en lugar de degradado. Ideal si prefieres mayor longitud o acabado más tradicional. Incluye recorte de barba con perfilado de contornos y peinado con producto para un acabado impecable.</p>
+                            <div class="nb-svc-meta">
+                                <span class="price">18,00 €</span>
+                                <span class="duration"><i class="far fa-clock mr-1"></i> 30 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <article class="nb-svc-card">
+                        <img src="assets/images/services/service-details.jpg" alt="Corte con barba perfilada en Norden Barber Cuenca" class="nb-svc-card-img">
+                        <div class="nb-svc-card-body">
+                            <span class="nb-svc-badge recomendado">Recomendado</span>
+                            <div class="nb-svc-card-icon"><i class="fas fa-user-tie"></i></div>
+                            <h3>Corte + barba perfilada</h3>
+                            <p>Corte de cabello según tu estilo + arreglo de barba con perfilado detallado de todos los contornos: mejillas, patillas, bigote y cuello. Perfectamente definido, sin un pelo fuera de lugar. El favorito de los hombres que cuidan su imagen al detalle.</p>
+                            <div class="nb-svc-meta">
+                                <span class="price">18,00 €</span>
+                                <span class="duration"><i class="far fa-clock mr-1"></i> 30 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <article class="nb-svc-card" style="border-color: var(--gold); background: #111;">
+                        <img src="assets/images/about/modern-tools.jpg" alt="Corte y arreglo de barba élite en Norden Barber Cuenca" class="nb-svc-card-img">
+                        <div class="nb-svc-card-body" style="background: #111;">
+                            <span class="nb-svc-badge elite">Élite</span>
+                            <div class="nb-svc-card-icon"><i class="fas fa-gem"></i></div>
+                            <h3 style="color:#fff;">Corte + arreglo de barba completo</h3>
+                            <p style="color:rgba(255,255,255,0.6);">Nuestro servicio más completo y exclusivo. Corte de cabello + arreglo de barba completo: recorte, modelado de la forma, perfilado de todos los contornos y acabado con productos de alta gama. Combinado con peinado profesional. El resultado más premium que ofrecemos en Cuenca.</p>
+                            <div class="nb-svc-meta" style="border-top-color: rgba(255,255,255,0.1);">
+                                <span class="price">22,00 €</span>
+                                <span class="duration" style="color:rgba(255,255,255,0.4);"><i class="far fa-clock mr-1"></i> 30 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-primary" style="margin-right:14px;">
+                    <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                </a>
+                <a href="tel:+34632944076" class="nb-btn-outline" style="margin-right:14px;">
+                    <i class="fas fa-phone"></i> Llamar
+                </a>
+                <a href="pricing.html" class="nb-btn-outline">Ver tabla de precios</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="nb-why">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <span class="nb-section-label">Nuestra diferencia</span>
+                    <h2 class="nb-section-title white">¿Por qué elegir<br><span>Norden Barber</span><br>en Cuenca?</h2>
+                    <p style="color:rgba(255,255,255,0.5); font-size:15px; line-height:1.75; margin-bottom:32px;">No somos una peluquería más. Somos especialistas en estética masculina, con foco total en la precisión y la experiencia del cliente.</p>
+                    <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-primary">
+                        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="nb-why-item">
+                        <span class="nb-why-num">01</span>
+                        <div class="nb-why-text">
+                            <h4>30 minutos, resultado garantizado</h4>
+                            <p>Cada servicio está diseñado para completarse en media hora. Respetamos tu tiempo y no hacemos esperar a nuestros clientes en Cuenca.</p>
+                        </div>
+                    </div>
+                    <div class="nb-why-item">
+                        <span class="nb-why-num">02</span>
+                        <div class="nb-why-text">
+                            <h4>Cita previa — WhatsApp o teléfono</h4>
+                            <p>Escríbenos por WhatsApp o llámanos para reservar tu turno. Sin esperas en la puerta — solo llegas y te atendemos en tu hora.</p>
+                        </div>
+                    </div>
+                    <div class="nb-why-item">
+                        <span class="nb-why-num">03</span>
+                        <div class="nb-why-text">
+                            <h4>Técnica de precisión con herramientas premium</h4>
+                            <p>Degradados limpios, perfilados exactos y acabados impecables. Utilizamos maquinaria profesional de alta gama para cada corte.</p>
+                        </div>
+                    </div>
+                    <div class="nb-why-item">
+                        <span class="nb-why-num">04</span>
+                        <div class="nb-why-text">
+                            <h4>Referentes en Cuenca, Castilla-La Mancha</h4>
+                            <p>Somos una barbería con identidad propia en el corazón de Cuenca. Nuestra misión es ser la primera opción para el hombre que cuida su imagen en la ciudad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nb-cta">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2>Reserva tu servicio hoy<br>en Norden Barber Cuenca</h2>
+                    <p style="margin-top:12px; margin-bottom:0; color:rgba(17,17,17,0.65); font-size:15px;">Elige tu servicio, selecciona tu horario y listo. Sin esperas, sin complicaciones.</p>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-dark" style="margin-right:8px;margin-bottom:8px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="tel:+34632944076" class="nb-btn-dark" style="margin-bottom:8px;">
+                        <i class="fas fa-phone"></i> Llamar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="nb-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="nb-footer-logo"><img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca"></div>
+                    <p class="nb-footer-desc">La barbería de referencia en Cuenca, Castilla-La Mancha. Especialistas en cortes degradados, arreglo de barba y estética masculina premium.</p>
+                    <div class="nb-footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/34632944076" target="_blank" rel="noopener" aria-label="WhatsApp de Norden Barber"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5">
+                    <h5 class="nb-footer-title">Navegación</h5>
+                    <ul class="nb-footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="portfolio.html">Galería</a></li>
+                        <li><a href="pricing.html">Precios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5">
+                    <h5 class="nb-footer-title">Servicios</h5>
+                    <ul class="nb-footer-links">
+                        <li><a href="pricing.html">Corte clásico — 12,00 €</a></li>
+                        <li><a href="pricing.html">Corte degradado — 13,90 €</a></li>
+                        <li><a href="pricing.html">Degradado + barba — 16,00 €</a></li>
+                        <li><a href="pricing.html">Corte + barba + peinado — 18,00 €</a></li>
+                        <li><a href="pricing.html">Corte élite — 22,00 €</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5">
+                    <h5 class="nb-footer-title">Contacto</h5>
+                    <div class="nb-footer-info-item"><i class="fas fa-map-marker-alt"></i><span>Cuenca, Castilla-La Mancha<br>España — CP 16002</span></div>
+                    <div class="nb-footer-info-item"><i class="far fa-clock"></i><span>Lun–Sáb: 10:00–13:30 / 16:30–20:30<br>Domingo: Cerrado</span></div>
+                    <div class="nb-footer-info-item"><i class="fab fa-whatsapp"></i><span>WhatsApp: <a href="https://wa.me/34632944076" style="color:var(--gold);">+34 632 94 40 76</a><br>Llamada: <a href="tel:+34632944076" style="color:var(--gold);">+34 632 94 40 76</a></span></div>
+                </div>
+            </div>
+            <div class="nb-footer-bottom">
+                <p class="nb-footer-copy">© 2025 Norden Barber — Cuenca, Castilla-La Mancha, España. Todos los derechos reservados. · Desarrollado por <a href="https://natanaelalzatetorres.com/#home" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Nathan Torres</a></p>
+                <div class="nb-footer-legal">
+                    <a href="contact.html#aviso-legal">Aviso legal</a>
+                    <a href="contact.html#privacidad">Política de privacidad</a>
+                    <a href="contact.html#cookies">Política de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+    (function() {
+        var header = document.getElementById('nbHeader');
+        window.addEventListener('scroll', function() { header.classList.toggle('scrolled', window.scrollY > 50); });
+        var hamburger = document.getElementById('nbHamburger');
+        var mobileMenu = document.getElementById('nbMobileMenu');
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

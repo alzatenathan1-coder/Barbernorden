@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Norden Barber — La barbería de referencia en Cuenca, Castilla-La Mancha. Cortes degradados, arreglo de barba y paquetes premium desde 12€. Reserva por WhatsApp o llamando al +34 632 94 40 76.">
+    <meta name="keywords" content="barbería Cuenca, barber Cuenca, corte de pelo Cuenca, degradado Cuenca, arreglo de barba Cuenca, Norden Barber Cuenca, barbería Castilla-La Mancha">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Norden Barber">
+    <meta property="og:title" content="Norden Barber — La Barbería de Referencia en Cuenca">
+    <meta property="og:description" content="Barbería premium en Cuenca, Castilla-La Mancha. Cortes degradados, arreglo de barba y paquetes completos. Reserva por WhatsApp o teléfono.">
+    <meta property="og:image" content="assets/images/og-image.png">
+    <meta property="og:type" content="business.business">
+    <meta property="og:locale" content="es_ES">
+    <title>Norden Barber — La Barbería de Referencia en Cuenca | Castilla-La Mancha</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+    <link rel="shortcut icon" href="assets/images/favicon-logo.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-4.5.3.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "Norden Barber",
+      "description": "Barbería de referencia en Cuenca, Castilla-La Mancha, España. Especialistas en cortes degradados, arreglo de barba y estética masculina premium.",
+      "image": "assets/images/logos/logo.png",
+      "url": "https://www.nordenbarber.es",
+      "telephone": "+34632944076",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cuenca",
+        "addressRegion": "Castilla-La Mancha",
+        "postalCode": "16002",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.0710372,
+        "longitude": -2.1345001
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "10:00",
+          "closes": "13:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "16:30",
+          "closes": "20:30"
+        }
+      ],
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
+      "areaServed": {
+        "@type": "City",
+        "name": "Cuenca",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Castilla-La Mancha",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "España"
+          }
+        }
+      }
+    }
+    </script>
+    <style>
+        /* =====================================================
+           NORDEN BARBER — Estilos personalizados
+        ===================================================== */
+        :root {
+            --gold: #c8a951;
+            --dark: #111111;
+            --dark-2: #1a1a1a;
+            --dark-3: #222222;
+            --text-muted: #888888;
+        }
+
+        /* --- HEADER --- */
+        .nb-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: rgba(17,17,17,0.97);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(200,169,81,0.2);
+            transition: all 0.3s ease;
+        }
+        .nb-header.scrolled {
+            background: rgba(10,10,10,0.99);
+            border-bottom-color: rgba(200,169,81,0.4);
+        }
+        .nb-header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+        }
+        .nb-logo img {
+            height: 72px;
+            width: auto;
+        }
+        .nb-nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nb-nav a {
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #cccccc;
+            transition: color 0.3s;
+        }
+        .nb-nav a:hover,
+        .nb-nav a.active {
+            color: var(--gold);
+        }
+        .nb-btn-reservar {
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: var(--gold);
+            color: #111 !important;
+            padding: 10px 22px;
+            border-radius: 2px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .nb-btn-reservar:hover {
+            background: #b8942e;
+            color: #fff !important;
+        }
+
+        /* Hamburger móvil */
+        .nb-hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .nb-hamburger span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: #fff;
+            transition: all 0.3s;
+        }
+        .nb-mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: rgba(10,10,10,0.99);
+            border-top: 1px solid rgba(200,169,81,0.3);
+            padding: 24px 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .nb-mobile-menu.open { display: flex; }
+        .nb-mobile-menu a {
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #ccc;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+        .nb-mobile-menu a:hover { color: var(--gold); }
+        .nb-mobile-menu .nb-btn-reservar {
+            text-align: center;
+            margin-top: 8px;
+            border-bottom: none;
+        }
+
+        /* --- HERO --- */
+        .nb-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url('assets/images/hero/hero-bg.jpg') center center/cover no-repeat;
+            padding-top: 90px;
+        }
+        .nb-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10,10,10,0.88) 0%, rgba(10,10,10,0.6) 100%);
+        }
+        .nb-hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .nb-hero-badge {
+            display: inline-block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid rgba(200,169,81,0.5);
+            padding: 6px 18px;
+            margin-bottom: 24px;
+        }
+        .nb-hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(36px, 6vw, 80px);
+            font-weight: 700;
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .nb-hero h1 span {
+            color: var(--gold);
+        }
+        .nb-hero p {
+            font-size: 17px;
+            color: rgba(255,255,255,0.75);
+            max-width: 540px;
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .nb-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: var(--gold);
+            color: #111;
+            padding: 14px 30px;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .nb-btn-primary:hover {
+            background: #b8942e;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .nb-btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: transparent;
+            color: #fff;
+            padding: 13px 30px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .nb-btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .nb-hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .nb-hero-stat .number {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .nb-hero-stat .label {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.5);
+            margin-top: 4px;
+        }
+
+        /* Indicador horario */
+        .nb-open-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .nb-open-badge.open {
+            background: rgba(76,175,80,0.15);
+            color: #81c784;
+            border: 1px solid rgba(76,175,80,0.3);
+        }
+        .nb-open-badge.closed {
+            background: rgba(244,67,54,0.12);
+            color: #ef9a9a;
+            border: 1px solid rgba(244,67,54,0.25);
+        }
+        .nb-open-badge .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+        .nb-open-badge.open .dot { animation: pulse-green 2s infinite; }
+        @keyframes pulse-green {
+            0%,100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* --- SECTION COMMONS --- */
+        section { padding: 90px 0; }
+        .nb-section-label {
+            font-family: 'Oswald', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+            display: block;
+        }
+        .nb-section-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(28px, 4vw, 46px);
+            font-weight: 700;
+            color: #111;
+            text-transform: uppercase;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+        .nb-section-title span { color: var(--gold); }
+        .nb-section-title.white { color: #fff; }
+        .nb-section-desc {
+            font-size: 16px;
+            color: #666;
+            max-width: 560px;
+            line-height: 1.75;
+        }
+
+        /* --- NOSOTROS --- */
+        .nb-about { background: #fff; }
+        .nb-about-img-wrap {
+            position: relative;
+        }
+        .nb-about-img-main {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+        .nb-about-img-accent {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 4px solid #fff;
+            border-radius: 2px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .nb-about-badge {
+            position: absolute;
+            top: 30px;
+            left: -20px;
+            background: var(--gold);
+            color: #111;
+            padding: 18px 22px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .nb-about-badge .big { font-size: 32px; display: block; }
+        .nb-about-badge .small { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+        .nb-about-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-top: 28px;
+        }
+        .nb-about-feature-icon {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+            color: #111;
+            font-size: 20px;
+        }
+        .nb-about-feature-text h5 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #111;
+            margin-bottom: 4px;
+        }
+        .nb-about-feature-text p {
+            font-size: 14px;
+            color: #777;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* --- SERVICIOS RESUMEN --- */
+        .nb-services-overview { background: var(--dark-2); }
+        .nb-service-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 40px 32px;
+            text-align: center;
+            transition: all 0.4s;
+            height: 100%;
+        }
+        .nb-service-card:hover {
+            background: rgba(200,169,81,0.1);
+            border-color: rgba(200,169,81,0.4);
+            transform: translateY(-6px);
+        }
+        .nb-service-card-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(200,169,81,0.1);
+            border: 1px solid rgba(200,169,81,0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 28px;
+            color: var(--gold);
+            transition: all 0.4s;
+        }
+        .nb-service-card:hover .nb-service-card-icon {
+            background: var(--gold);
+            color: #111;
+        }
+        .nb-service-card h4 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .nb-service-card p {
+            font-size: 14px;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* --- CTA BANNER --- */
+        .nb-cta {
+            background: var(--gold);
+            padding: 70px 0;
+        }
+        .nb-cta h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(26px, 4vw, 44px);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #111;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .nb-btn-dark {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: #111;
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 2px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .nb-btn-dark:hover {
+            background: #000;
+            color: var(--gold);
+        }
+
+        /* --- PRECIOS --- */
+        .nb-pricing {
+            background: url('assets/images/background/pricing-plan-bg.jpg') center/cover no-repeat;
+            position: relative;
+        }
+        .nb-pricing::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(10,10,10,0.92);
+        }
+        .nb-pricing > * { position: relative; }
+        .nb-pricing .container { position: relative; z-index: 1; }
+        .nb-price-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 28px 28px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s;
+            gap: 16px;
+        }
+        .nb-price-card:hover {
+            border-color: rgba(200,169,81,0.4);
+            background: rgba(200,169,81,0.06);
+        }
+        .nb-price-card.featured {
+            border-color: rgba(200,169,81,0.5);
+            background: rgba(200,169,81,0.08);
+        }
+        .nb-price-card.elite {
+            background: rgba(200,169,81,0.15);
+            border-color: var(--gold);
+        }
+        .nb-price-info h4 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .nb-price-info p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.45);
+            margin: 0;
+        }
+        .nb-price-right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-shrink: 0;
+        }
+        .nb-price-badge {
+            font-family: 'Oswald', sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 2px;
+        }
+        .nb-price-badge.recomendado {
+            background: rgba(200,169,81,0.2);
+            color: var(--gold);
+            border: 1px solid rgba(200,169,81,0.4);
+        }
+        .nb-price-badge.elite {
+            background: var(--gold);
+            color: #111;
+        }
+        .nb-price-amount {
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+        .nb-price-duration {
+            font-size: 12px;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 1px;
+        }
+
+        /* --- GALERÍA --- */
+        .nb-gallery { background: #0e0e0e; }
+        .nb-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 320px);
+            gap: 8px;
+        }
+        .nb-gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .nb-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .nb-gallery-item:hover img { transform: scale(1.08); }
+        .nb-gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s;
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+        }
+        .nb-gallery-item:hover .nb-gallery-overlay { opacity: 1; }
+        .nb-gallery-overlay-text {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #fff;
+        }
+        .nb-gallery-overlay-text small {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--gold);
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        /* --- TESTIMONIOS --- */
+        .nb-testimonials { background: #fff; }
+        .nb-testimonial-card {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 36px 32px;
+            height: 100%;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .nb-testimonial-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 8px 32px rgba(200,169,81,0.12);
+        }
+        .nb-stars {
+            color: var(--gold);
+            font-size: 14px;
+            margin-bottom: 16px;
+            letter-spacing: 2px;
+        }
+        .nb-testimonial-card blockquote {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.75;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+        .nb-testimonial-card blockquote::before {
+            content: '"';
+            font-size: 48px;
+            color: var(--gold);
+            font-family: 'Oswald', sans-serif;
+            line-height: 0;
+            vertical-align: -20px;
+            margin-right: 4px;
+        }
+        .nb-testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .nb-testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+        }
+        .nb-testimonial-name {
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #111;
+            margin: 0;
+        }
+        .nb-testimonial-city {
+            font-size: 12px;
+            color: #999;
+            letter-spacing: 1px;
+        }
+
+        /* --- HORARIO Y MAPA --- */
+        .nb-schedule { background: var(--dark); }
+        .nb-schedule-inner {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 48px 40px;
+            height: 100%;
+        }
+        .nb-schedule-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            font-size: 15px;
+        }
+        .nb-schedule-row:last-child { border-bottom: none; }
+        .nb-schedule-day {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.7);
+        }
+        .nb-schedule-hours {
+            color: var(--gold);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .nb-schedule-hours.cerrado {
+            color: rgba(255,255,255,0.25);
+            font-style: italic;
+        }
+        .nb-map-wrap {
+            height: 100%;
+            min-height: 420px;
+        }
+        .nb-map-wrap iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            border: none;
+            filter: grayscale(30%);
+        }
+
+        /* --- FOOTER --- */
+        .nb-footer {
+            background: #0a0a0a;
+            border-top: 1px solid rgba(200,169,81,0.2);
+            padding: 70px 0 0;
+        }
+        .nb-footer-logo img { height: 48px; width: auto; margin-bottom: 20px; }
+        .nb-footer-desc {
+            font-size: 14px;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.75;
+            margin-bottom: 24px;
+        }
+        .nb-footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border: 1px solid rgba(255,255,255,0.12);
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+            margin-right: 8px;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .nb-footer-social a:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .nb-footer-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(200,169,81,0.3);
+        }
+        .nb-footer-links { list-style: none; padding: 0; margin: 0; }
+        .nb-footer-links li { margin-bottom: 10px; }
+        .nb-footer-links a {
+            font-size: 13px;
+            color: rgba(255,255,255,0.45);
+            transition: color 0.3s;
+            letter-spacing: 0.5px;
+        }
+        .nb-footer-links a:hover { color: var(--gold); }
+        .nb-footer-links a::before {
+            content: '— ';
+            color: rgba(200,169,81,0.4);
+            font-size: 10px;
+        }
+        .nb-footer-info-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 14px;
+            align-items: flex-start;
+        }
+        .nb-footer-info-item i {
+            color: var(--gold);
+            font-size: 14px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        .nb-footer-info-item span {
+            font-size: 13px;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.6;
+        }
+        .nb-footer-bottom {
+            margin-top: 50px;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .nb-footer-copy {
+            font-size: 12px;
+            color: rgba(255,255,255,0.3);
+            letter-spacing: 0.5px;
+        }
+        .nb-footer-legal a {
+            font-size: 12px;
+            color: rgba(255,255,255,0.3);
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+        .nb-footer-legal a:hover { color: var(--gold); }
+
+        /* --- COOKIE BANNER --- */
+        .nb-cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10,10,10,0.97);
+            border-top: 1px solid rgba(200,169,81,0.3);
+            padding: 20px 24px;
+            z-index: 99999;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .nb-cookie-banner.show { display: flex; }
+        .nb-cookie-text {
+            font-size: 13px;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.6;
+            flex: 1;
+        }
+        .nb-cookie-text a { color: var(--gold); }
+        .nb-cookie-actions { display: flex; gap: 10px; }
+        .nb-cookie-accept {
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: var(--gold);
+            color: #111;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .nb-cookie-accept:hover { background: #b8942e; }
+        .nb-cookie-reject {
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: transparent;
+            color: rgba(255,255,255,0.4);
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .nb-cookie-reject:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+
+        /* --- BOTÓN FLOTANTE MÓVIL --- */
+        .nb-fab {
+            display: none;
+            position: fixed;
+            bottom: 24px;
+            right: 20px;
+            z-index: 9998;
+            background: var(--gold);
+            color: #111;
+            padding: 14px 20px;
+            border-radius: 30px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 24px rgba(200,169,81,0.4);
+            text-decoration: none;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        .nb-fab:hover { background: #b8942e; color: #fff; transform: translateY(-2px); }
+
+        /* --- WHATSAPP BUTTON --- */
+        .nb-btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: #25D366;
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .nb-btn-whatsapp:hover {
+            background: #128C7E;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* --- PRELOADER --- */
+        .nb-preloader {
+            position: fixed;
+            inset: 0;
+            background: #111;
+            z-index: 999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s;
+        }
+        .nb-preloader.hidden { opacity: 0; pointer-events: none; }
+        .nb-preloader-logo img { height: 160px; animation: pulse-logo 1.5s infinite; }
+        @keyframes pulse-logo {
+            0%,100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(0.97); }
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 991px) {
+            .nb-nav { display: none; }
+            .nb-hamburger { display: flex; }
+            .nb-about-img-accent { display: none; }
+            .nb-about-badge { left: 10px; }
+            .nb-gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 220px);
+            }
+            .nb-hero-stats { flex-wrap: wrap; gap: 24px; }
+        }
+        @media (max-width: 767px) {
+            section { padding: 64px 0; }
+            .nb-price-card { flex-direction: column; align-items: flex-start; }
+            .nb-price-right { width: 100%; justify-content: space-between; }
+            .nb-gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+            .nb-gallery-item { height: 260px; }
+            .nb-cta .text-lg-right { text-align: left !important; margin-top: 20px; }
+            .nb-footer-bottom { flex-direction: column; text-align: center; }
+            .nb-footer-legal a:first-child { margin-left: 0; }
+            .nb-fab { display: inline-flex; }
+            .nb-hero h1 { font-size: clamp(30px, 8vw, 50px); }
+            .nb-map-wrap { min-height: 300px; }
+            .nb-map-wrap iframe { min-height: 300px; }
+            .nb-schedule-inner { padding: 32px 20px; }
+        }
+        @media (max-width: 480px) {
+            .nb-hero-stats { gap: 20px; }
+            .nb-hero-stat .number { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="nb-preloader" id="nbPreloader">
+        <div class="nb-preloader-logo">
+            <img src="assets/images/logos/logo.png" alt="Norden Barber Cuenca">
+        </div>
+    </div>
+
+    <!-- Cookie Banner RGPD -->
+    <div class="nb-cookie-banner" id="nbCookieBanner">
+        <p class="nb-cookie-text">
+            Utilizamos cookies propias para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra
+            <a href="contact.html#privacidad">Política de Privacidad</a> y nuestra <a href="contact.html#cookies">Política de Cookies</a>.
+        </p>
+        <div class="nb-cookie-actions">
+            <button class="nb-cookie-accept" id="nbCookieAccept">Aceptar</button>
+            <button class="nb-cookie-reject" id="nbCookieReject">Rechazar</button>
+        </div>
+    </div>
+
+    <!-- Botón flotante móvil -->
+    <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita" target="_blank" rel="noopener" class="nb-fab" aria-label="Escribir por WhatsApp">
+        <i class="fab fa-whatsapp"></i> Reservar cita
+    </a>
+
+    <!-- HEADER -->
+    <header class="nb-header" id="nbHeader">
+        <div class="container">
+            <div class="nb-header-inner">
+                <a href="index.html" class="nb-logo" aria-label="Norden Barber — Inicio">
+                    <img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca">
+                </a>
+                <nav aria-label="Navegación principal">
+                    <ul class="nb-nav">
+                        <li><a href="index.html" class="active">Inicio</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="portfolio.html">Galería</a></li>
+                        <li><a href="pricing.html">Precios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li>
+                            <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-reservar">
+                                Reservar cita
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="nb-hamburger" id="nbHamburger" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <nav class="nb-mobile-menu" id="nbMobileMenu" aria-label="Menú móvil">
+                <a href="index.html">Inicio</a>
+                <a href="services.html">Servicios</a>
+                <a href="portfolio.html">Galería</a>
+                <a href="pricing.html">Precios</a>
+                <a href="contact.html">Contacto</a>
+                <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-reservar">Reservar cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="nb-hero" id="inicio">
+        <div class="container">
+            <div class="nb-hero-content">
+                <div id="nbOpenBadge" class="nb-open-badge" role="status" aria-live="polite"></div>
+                <div class="nb-hero-badge">Cuenca, Castilla-La Mancha, España</div>
+                <h1>Norden Barber —<br><span>La Barbería de</span><br>Referencia en Cuenca</h1>
+                <p>Especialistas en cortes degradados, arreglo de barba y estética masculina premium. Cita previa en minutos, resultado que habla por sí solo.</p>
+                <div class="d-flex flex-wrap gap-3" style="gap:14px; display:flex;">
+                    <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-primary" style="margin-right:14px;">
+                        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                    </a>
+                    <a href="tel:+34632944076" class="nb-btn-outline" style="margin-right:14px;">
+                        <i class="fas fa-phone"></i> Llamar
+                    </a>
+                    <a href="services.html" class="nb-btn-outline">
+                        <i class="fas fa-cut"></i> Ver servicios
+                    </a>
+                </div>
+                <div class="nb-hero-stats">
+                    <div class="nb-hero-stat">
+                        <div class="number">6</div>
+                        <div class="label">Servicios</div>
+                    </div>
+                    <div class="nb-hero-stat">
+                        <div class="number">30'</div>
+                        <div class="label">Por sesión</div>
+                    </div>
+                    <div class="nb-hero-stat">
+                        <div class="number">12€</div>
+                        <div class="label">Desde</div>
+                    </div>
+                    <div class="nb-hero-stat">
+                        <div class="number"><i class="fab fa-whatsapp" style="font-size:28px;"></i></div>
+                        <div class="label">WhatsApp</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="nb-about" id="nosotros">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="nb-about-img-wrap pr-lg-4">
+                        <img src="assets/images/about/about-left.jpg" alt="Interior de Norden Barber, barbería en Cuenca" class="nb-about-img-main">
+                        <img src="assets/images/about/about-right.jpg" alt="Detalle de servicio en Norden Barber Cuenca" class="nb-about-img-accent">
+                        <div class="nb-about-badge">
+                            <span class="big">100%</span>
+                            <span class="small">Precisión</span>
+                        </div>
+                        <div style="position:absolute; top:20px; left:-15px; z-index:2;">
+                            <img src="assets/images/favicon-logo.png" alt="Norden Barber" style="width:70px;height:70px;border-radius:50%;border:3px solid var(--gold);box-shadow:0 4px 20px rgba(200,169,81,0.4);">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 pl-lg-5">
+                    <span class="nb-section-label">Sobre nosotros</span>
+                    <h2 class="nb-section-title">Barbería de referencia<br><span>en Cuenca</span></h2>
+                    <p class="nb-section-desc" style="margin-bottom:24px;">
+                        En Norden Barber llevamos la estética masculina a otro nivel. Situados en el corazón de Cuenca, Castilla-La Mancha, ofrecemos un espacio donde la tradición barbera se une a la técnica más moderna para darte el resultado que mereces.
+                    </p>
+                    <p style="font-size:15px; color:#777; line-height:1.75; margin-bottom:32px;">
+                        Cada corte es tratado como una obra de precisión: desde el degradado más limpio hasta el arreglo de barba más detallado. Nuestro compromiso es que salgas sintiéndote a tu mejor versión, en solo 30 minutos y con cita previa por WhatsApp o llamada.
+                    </p>
+                    <div class="nb-about-feature">
+                        <div class="nb-about-feature-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="nb-about-feature-text">
+                            <h5>Técnica de precisión</h5>
+                            <p>Degradados, perfilados y cortes clásicos ejecutados con herramientas profesionales de alta gama.</p>
+                        </div>
+                    </div>
+                    <div class="nb-about-feature">
+                        <div class="nb-about-feature-icon">
+                            <i class="far fa-calendar-check"></i>
+                        </div>
+                        <div class="nb-about-feature-text">
+                            <h5>Cita previa sin esperas</h5>
+                            <p>Reserva tu turno por WhatsApp o llamada al <a href="tel:+34632944076" style="color:var(--gold);">+34 632 94 40 76</a> — te confirmamos en minutos.</p>
+                        </div>
+                    </div>
+                    <div class="nb-about-feature">
+                        <div class="nb-about-feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="nb-about-feature-text">
+                            <h5>En el centro de Cuenca</h5>
+                            <p>Ubicados en Cuenca capital, CP 16002, con fácil acceso desde cualquier punto de la ciudad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS RESUMEN -->
+    <section class="nb-services-overview" id="servicios">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="nb-section-label">Lo que hacemos</span>
+                <h2 class="nb-section-title white">Nuestros <span>servicios</span></h2>
+                <p class="nb-section-desc" style="color:rgba(255,255,255,0.5); margin:0 auto;">Cada servicio está diseñado para ofrecerte el mejor resultado en el menor tiempo posible.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="nb-service-card">
+                        <div class="nb-service-card-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h4>Corte de cabello</h4>
+                        <p>Desde el clásico hasta el degradado más técnico. Cortes adaptados a tu estilo y forma de cara.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="nb-service-card">
+                        <div class="nb-service-card-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Arreglo de barba</h4>
+                        <p>Perfilado, modelado y acabado de barba con productos premium. El complemento perfecto para tu look.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="nb-service-card">
+                        <div class="nb-service-card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Paquetes completos</h4>
+                        <p>Corte + barba + peinado en una sola sesión de 30 minutos. La opción más completa y recomendada.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="nb-service-card">
+                        <div class="nb-service-card-icon">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <h4>Reserva por WhatsApp</h4>
+                        <p>Escríbenos por WhatsApp o llámanos para gestionar tu cita. Rápido, sencillo y sin esperas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="services.html" class="nb-btn-primary">Ver todos los servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="nb-cta">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2>¿Listo para tu próximo corte<br>en Cuenca?</h2>
+                    <p style="margin-top:12px; margin-bottom:0; color:rgba(17,17,17,0.65); font-size:15px;">Escríbenos por WhatsApp o llámanos y te reservamos turno. Sin esperas, sin sorpresas.</p>
+                </div>
+                <div class="col-lg-5 text-lg-right">
+                    <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-dark" style="margin-right:10px;margin-bottom:8px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="tel:+34632944076" class="nb-btn-dark" style="margin-bottom:8px;">
+                        <i class="fas fa-phone"></i> Llamar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="nb-pricing" id="precios">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="nb-section-label">Tarifas claras</span>
+                <h2 class="nb-section-title white">Nuestros <span>precios</span></h2>
+                <p style="color:rgba(255,255,255,0.45); font-size:15px;">Sin sorpresas. Precios fijos, servicio premium.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <article class="nb-price-card">
+                        <div class="nb-price-info">
+                            <h4>Corte caballero clásico</h4>
+                            <p><i class="far fa-clock mr-1"></i> 30 minutos</p>
+                        </div>
+                        <div class="nb-price-right">
+                            <span class="nb-price-amount">12,00 €</span>
+                        </div>
+                    </article>
+                    <article class="nb-price-card">
+                        <div class="nb-price-info">
+                            <h4>Corte caballero degradado</h4>
+                            <p><i class="far fa-clock mr-1"></i> 30 minutos</p>
+                        </div>
+                        <div class="nb-price-right">
+                            <span class="nb-price-amount">13,90 €</span>
+                        </div>
+                    </article>
+                    <article class="nb-price-card featured">
+                        <div class="nb-price-info">
+                            <h4>Corte degradado + barba + peinado</h4>
+                            <p><i class="far fa-clock mr-1"></i> 30 minutos</p>
+                        </div>
+                        <div class="nb-price-right">
+                            <span class="nb-price-badge recomendado">Recomendado</span>
+                            <span class="nb-price-amount">16,00 €</span>
+                        </div>
+                    </article>
+                    <article class="nb-price-card featured">
+                        <div class="nb-price-info">
+                            <h4>Corte de cabello + barba + peinado</h4>
+                            <p><i class="far fa-clock mr-1"></i> 30 minutos</p>
+                        </div>
+                        <div class="nb-price-right">
+                            <span class="nb-price-badge recomendado">Recomendado</span>
+                            <span class="nb-price-amount">18,00 €</span>
+                        </div>
+                    </article>
+                    <article class="nb-price-card featured">
+                        <div class="nb-price-info">
+                            <h4>Corte + barba perfilada</h4>
+                            <p><i class="far fa-clock mr-1"></i> 30 minutos</p>
+                        </div>
+                        <div class="nb-price-right">
+                            <span class="nb-price-badge recomendado">Recomendado</span>
+                            <span class="nb-price-amount">18,00 €</span>
+                        </div>
+                    </article>
+                    <article class="nb-price-card elite">
+                        <div class="nb-price-info">
+                            <h4>Corte + arreglo de barba completo</h4>
+                            <p><i class="far fa-clock mr-1"></i> 30 minutos — Servicio élite</p>
+                        </div>
+                        <div class="nb-price-right">
+                            <span class="nb-price-badge elite">Élite</span>
+                            <span class="nb-price-amount">22,00 €</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="pricing.html" class="nb-btn-primary" style="margin-right:14px;">Ver todos los precios</a>
+                <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-outline">
+                    <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="nb-gallery" id="galeria">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="nb-section-label">Nuestros trabajos</span>
+                <h2 class="nb-section-title white">Nuestros trabajos <span>hablan por nosotros</span></h2>
+                <p style="color:rgba(255,255,255,0.45); font-size:15px; max-width:500px; margin:0 auto;">Cada corte es un resultado real, trabajado con precisión milimétrica en nuestra barbería de Cuenca.</p>
+            </div>
+            <div class="nb-gallery-grid">
+                <div class="nb-gallery-item">
+                    <img src="assets/images/gellary/real-cut-1.jpg" alt="Corte degradado con reflejos rubios — Norden Barber Cuenca" loading="lazy">
+                    <div class="nb-gallery-overlay">
+                        <div class="nb-gallery-overlay-text">
+                            <small>Norden Barber · Cuenca</small>
+                            Degradado con reflejos
+                        </div>
+                    </div>
+                </div>
+                <div class="nb-gallery-item">
+                    <img src="assets/images/gellary/real-cut-2.jpg" alt="Corte degradado oscuro clásico — Norden Barber Cuenca" loading="lazy">
+                    <div class="nb-gallery-overlay">
+                        <div class="nb-gallery-overlay-text">
+                            <small>Norden Barber · Cuenca</small>
+                            Degradado oscuro clásico
+                        </div>
+                    </div>
+                </div>
+                <div class="nb-gallery-item">
+                    <img src="assets/images/gellary/real-cut-3.jpg" alt="Corte con línea de diseño y fade lateral — Norden Barber Cuenca" loading="lazy">
+                    <div class="nb-gallery-overlay">
+                        <div class="nb-gallery-overlay-text">
+                            <small>Norden Barber · Cuenca</small>
+                            Fade lateral con diseño
+                        </div>
+                    </div>
+                </div>
+                <div class="nb-gallery-item">
+                    <img src="assets/images/gellary/real-cut-4.jpg" alt="Skin fade muy limpio — Norden Barber Cuenca" loading="lazy">
+                    <div class="nb-gallery-overlay">
+                        <div class="nb-gallery-overlay-text">
+                            <small>Norden Barber · Cuenca</small>
+                            Skin fade impecable
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="portfolio.html" class="nb-btn-primary">Ver galería completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS — RESEÑAS REALES DE GOOGLE -->
+    <section class="nb-testimonials" id="testimonios">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="nb-section-label">Lo que dicen nuestros clientes</span>
+                <h2 class="nb-section-title">Reseñas reales de <span>Google</span></h2>
+                <p class="nb-section-desc" style="margin:0 auto; text-align:center;">
+                    <i class="fab fa-google" style="color:#4285F4; margin-right:6px;"></i>
+                    Opiniones verificadas de clientes reales en Google Maps
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="nb-testimonial-card">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+                            <i class="fab fa-google" style="color:#4285F4;font-size:16px;"></i>
+                            <span style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#999;font-family:'Oswald',sans-serif;">Reseña de Google</span>
+                        </div>
+                        <div class="nb-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>El mejor peluquero que he tenido hasta la fecha, muy profesional y rápido. Muy amable en el trato.</blockquote>
+                        <div class="nb-testimonial-author">
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;color:#111;font-size:18px;flex-shrink:0;">J</div>
+                            <div>
+                                <p class="nb-testimonial-name">Jaime Gil Izquierdo</p>
+                                <span class="nb-testimonial-city">Hace 4 años · Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="nb-testimonial-card">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+                            <i class="fab fa-google" style="color:#4285F4;font-size:16px;"></i>
+                            <span style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#999;font-family:'Oswald',sans-serif;">Reseña de Google</span>
+                        </div>
+                        <div class="nb-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>Chaval muy trabajador, rápido y eficaz y sobre todo buena atención... Recomiendo sin duda</blockquote>
+                        <div class="nb-testimonial-author">
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;color:#111;font-size:18px;flex-shrink:0;">M</div>
+                            <div>
+                                <p class="nb-testimonial-name">Miguel Angel Alcaraz</p>
+                                <span class="nb-testimonial-city">Hace 5 años · Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="nb-testimonial-card">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+                            <i class="fab fa-google" style="color:#4285F4;font-size:16px;"></i>
+                            <span style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#999;font-family:'Oswald',sans-serif;">Reseña de Google</span>
+                        </div>
+                        <div class="nb-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>Peluquero cualificado, lugar aseado y educación por parte del personal nos les falta.</blockquote>
+                        <div class="nb-testimonial-author">
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;color:#111;font-size:18px;flex-shrink:0;">Y</div>
+                            <div>
+                                <p class="nb-testimonial-name">Yassin</p>
+                                <span class="nb-testimonial-city">Hace 4 años · Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="nb-testimonial-card">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+                            <i class="fab fa-google" style="color:#4285F4;font-size:16px;"></i>
+                            <span style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#999;font-family:'Oswald',sans-serif;">Reseña de Google</span>
+                        </div>
+                        <div class="nb-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <blockquote>El corte de pelo espectacular, gran habilidad con las tijeras, el único fallo que no limpien el pelo.</blockquote>
+                        <div class="nb-testimonial-author">
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;color:#111;font-size:18px;flex-shrink:0;">N</div>
+                            <div>
+                                <p class="nb-testimonial-name">Nicolas Pallas</p>
+                                <span class="nb-testimonial-city">Hace 2 años · Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="nb-testimonial-card">
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+                            <i class="fab fa-google" style="color:#4285F4;font-size:16px;"></i>
+                            <span style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#999;font-family:'Oswald',sans-serif;">Reseña de Google</span>
+                        </div>
+                        <div class="nb-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <blockquote>Buen trato, amable y buen resultado.</blockquote>
+                        <div class="nb-testimonial-author">
+                            <div style="width:48px;height:48px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;color:#111;font-size:18px;flex-shrink:0;">S</div>
+                            <div>
+                                <p class="nb-testimonial-name">Santiago Villavicencio</p>
+                                <span class="nb-testimonial-city">Hace 7 años · Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORARIO + MAPA -->
+    <section class="nb-schedule" id="horario">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="nb-section-label">Estamos aquí</span>
+                <h2 class="nb-section-title white">Horario y <span>ubicación</span></h2>
+                <p style="color:rgba(255,255,255,0.4); font-size:15px;">Norden Barber — Cuenca, Castilla-La Mancha, CP 16002</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="nb-schedule-inner">
+                        <h4 style="font-family:'Oswald',sans-serif; font-size:16px; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:24px;">
+                            <i class="far fa-clock mr-2"></i>Horario de apertura
+                        </h4>
+                        <div class="nb-schedule-row">
+                            <span class="nb-schedule-day">Lunes — Viernes</span>
+                            <span class="nb-schedule-hours">10:00–13:30 · 16:30–20:30</span>
+                        </div>
+                        <div class="nb-schedule-row">
+                            <span class="nb-schedule-day">Sábado</span>
+                            <span class="nb-schedule-hours">10:00–13:30 · 16:30–20:30</span>
+                        </div>
+                        <div class="nb-schedule-row">
+                            <span class="nb-schedule-day">Domingo</span>
+                            <span class="nb-schedule-hours cerrado">Cerrado</span>
+                        </div>
+                        <div style="margin-top:32px; padding:20px; background:rgba(200,169,81,0.08); border:1px solid rgba(200,169,81,0.2); border-radius:2px;">
+                            <p style="font-size:13px; color:rgba(255,255,255,0.55); margin:0; line-height:1.7;">
+                                <i class="fas fa-phone" style="color:var(--gold); margin-right:8px;"></i>
+                                Reserva tu cita por WhatsApp o llamada. Cita previa obligatoria — no atendemos sin reserva.
+                            </p>
+                            <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita%20en%20Norden%20Barber" target="_blank" rel="noopener" class="nb-btn-primary d-block text-center mt-3" style="font-size:12px; padding:11px 20px;">
+                                <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                            </a>
+                            <a href="tel:+34632944076" class="nb-btn-outline d-block text-center mt-2" style="font-size:12px; padding:10px 20px;">
+                                <i class="fas fa-phone"></i> Llamar: +34 632 94 40 76
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="nb-map-wrap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.5!2d-2.1345001!3d40.0710372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5d6725f9a1aad3%3A0xaf53a0130a752836!2sBarber%20Norden!5e0!3m2!1ses!2ses!4v1716000000000!5m2!1ses!2ses"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación de Norden Barber en Cuenca, Castilla-La Mancha">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="nb-footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="nb-footer-logo">
+                        <img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca">
+                    </div>
+                    <p class="nb-footer-desc">La barbería de referencia en Cuenca, Castilla-La Mancha. Especialistas en cortes degradados, arreglo de barba y estética masculina premium desde el corazón de Cuenca.</p>
+                    <div class="nb-footer-social">
+                        <a href="#" aria-label="Instagram de Norden Barber"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook de Norden Barber"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/34632944076" target="_blank" rel="noopener" aria-label="WhatsApp de Norden Barber"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5">
+                    <h5 class="nb-footer-title">Navegación</h5>
+                    <ul class="nb-footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="portfolio.html">Galería</a></li>
+                        <li><a href="pricing.html">Precios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5">
+                    <h5 class="nb-footer-title">Servicios</h5>
+                    <ul class="nb-footer-links">
+                        <li><a href="pricing.html">Corte clásico — 12,00 €</a></li>
+                        <li><a href="pricing.html">Corte degradado — 13,90 €</a></li>
+                        <li><a href="pricing.html">Degradado + barba — 16,00 €</a></li>
+                        <li><a href="pricing.html">Corte + barba + peinado — 18,00 €</a></li>
+                        <li><a href="pricing.html">Corte élite — 22,00 €</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5">
+                    <h5 class="nb-footer-title">Contacto</h5>
+                    <div class="nb-footer-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cuenca, Castilla-La Mancha<br>España — CP 16002</span>
+                    </div>
+                    <div class="nb-footer-info-item">
+                        <i class="far fa-clock"></i>
+                        <span>Lun–Sáb: 10:00–13:30 / 16:30–20:30<br>Domingo: Cerrado</span>
+                    </div>
+                    <div class="nb-footer-info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: <a href="https://wa.me/34632944076" style="color:var(--gold);">+34 632 94 40 76</a><br>
+                        Llamada: <a href="tel:+34632944076" style="color:var(--gold);">+34 632 94 40 76</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="nb-footer-bottom">
+                <p class="nb-footer-copy">© 2025 Norden Barber — Cuenca, Castilla-La Mancha, España. Todos los derechos reservados. · Desarrollado por <a href="https://natanaelalzatetorres.com/#home" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Nathan Torres</a></p>
+                <div class="nb-footer-legal">
+                    <a href="contact.html#aviso-legal">Aviso legal</a>
+                    <a href="contact.html#privacidad">Política de privacidad</a>
+                    <a href="contact.html#cookies">Política de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+    (function() {
+        'use strict';
+
+        // Preloader
+        window.addEventListener('load', function() {
+            var preloader = document.getElementById('nbPreloader');
+            if (preloader) {
+                setTimeout(function() {
+                    preloader.classList.add('hidden');
+                    setTimeout(function() { preloader.style.display = 'none'; }, 500);
+                }, 600);
+            }
+        });
+
+        // Header scroll
+        var header = document.getElementById('nbHeader');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Hamburger
+        var hamburger = document.getElementById('nbHamburger');
+        var mobileMenu = document.getElementById('nbMobileMenu');
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', function() {
+                var isOpen = mobileMenu.classList.toggle('open');
+                hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        }
+
+        // Indicador horario abierto/cerrado (hora de España peninsular)
+        function checkOpenStatus() {
+            var badge = document.getElementById('nbOpenBadge');
+            if (!badge) return;
+            var now = new Date();
+            var options = { timeZone: 'Europe/Madrid', hour: 'numeric', minute: 'numeric', weekday: 'long', hour12: false };
+            var parts = new Intl.DateTimeFormat('en-US', {
+                timeZone: 'Europe/Madrid',
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: false,
+                weekday: 'long'
+            }).formatToParts(now);
+            var dayMap = { 'Sunday': 0, 'Monday': 1, 'Tuesday': 2, 'Wednesday': 3, 'Thursday': 4, 'Friday': 5, 'Saturday': 6 };
+            var weekday = '', hour = 0, minute = 0;
+            parts.forEach(function(p) {
+                if (p.type === 'weekday') weekday = p.value;
+                if (p.type === 'hour') hour = parseInt(p.value, 10);
+                if (p.type === 'minute') minute = parseInt(p.value, 10);
+            });
+            var day = dayMap[weekday];
+            var totalMin = hour * 60 + minute;
+            var isOpen = false;
+            if (day >= 1 && day <= 6) {
+                var m1s = 10*60, m1e = 13*60+30, m2s = 16*60+30, m2e = 20*60+30;
+                isOpen = (totalMin >= m1s && totalMin < m1e) || (totalMin >= m2s && totalMin < m2e);
+            }
+            badge.className = 'nb-open-badge ' + (isOpen ? 'open' : 'closed');
+            badge.innerHTML = '<span class="dot"></span>' + (isOpen ? 'Abierto ahora' : 'Cerrado ahora');
+        }
+        checkOpenStatus();
+        setInterval(checkOpenStatus, 60000);
+
+        // Cookie banner
+        var cookieBanner = document.getElementById('nbCookieBanner');
+        var cookieAccept = document.getElementById('nbCookieAccept');
+        var cookieReject = document.getElementById('nbCookieReject');
+        if (!localStorage.getItem('nb_cookie_choice') && cookieBanner) {
+            cookieBanner.classList.add('show');
+        }
+        if (cookieAccept) {
+            cookieAccept.addEventListener('click', function() {
+                localStorage.setItem('nb_cookie_choice', 'accepted');
+                cookieBanner.classList.remove('show');
+            });
+        }
+        if (cookieReject) {
+            cookieReject.addEventListener('click', function() {
+                localStorage.setItem('nb_cookie_choice', 'rejected');
+                cookieBanner.classList.remove('show');
+            });
+        }
+
+        // WOW animations
+        if (typeof WOW !== 'undefined') { new WOW({ offset: 60, mobile: false }).init(); }
+
+    })();
+    </script>
+</body>
+</html>
