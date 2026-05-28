@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.nordenbarber.es/sitemap.xml
+Sitemap: https://barbernorden.com/sitemap.xml
