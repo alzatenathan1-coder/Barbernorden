@@ -10,6 +10,8 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Norden Barber">
     <link rel="canonical" href="https://barbernorden.com/">
+    <link rel="alternate" hreflang="es-ES" href="https://barbernorden.com/">
+    <link rel="alternate" hreflang="x-default" href="https://barbernorden.com/">
     <meta property="og:title" content="Norden Barber — La Barbería de Referencia en Cuenca">
     <meta property="og:description" content="Barbería premium en Cuenca, Castilla-La Mancha. Cortes degradados, arreglo de barba y paquetes completos. Reserva por WhatsApp o teléfono.">
     <meta property="og:image" content="https://barbernorden.com/assets/images/og-image.png">
@@ -32,10 +34,10 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@400;500&display=swap"></noscript>
-    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+
     <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-4.5.3.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="application/ld+json">
     {
@@ -1028,23 +1030,7 @@
             transform: translateY(-2px);
         }
 
-        /* --- PRELOADER --- */
-        .nb-preloader {
-            position: fixed;
-            inset: 0;
-            background: #111;
-            z-index: 999999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.5s;
-        }
-        .nb-preloader.hidden { opacity: 0; pointer-events: none; }
-        .nb-preloader-logo img { height: 160px; animation: pulse-logo 1.5s infinite; }
-        @keyframes pulse-logo {
-            0%,100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.7; transform: scale(0.97); }
-        }
+
 
         /* --- RESPONSIVE --- */
         @media (max-width: 991px) {
@@ -1099,6 +1085,18 @@
           "sameAs": ["https://www.instagram.com/norden.barber.shop/"]
         },
         {
+          "@type": "BreadcrumbList",
+          "@id": "https://barbernorden.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://barbernorden.com/"
+            }
+          ]
+        },
+        {
           "@type": "SiteNavigationElement",
           "@id": "https://barbernorden.com/#nav-inicio",
           "name": "Inicio",
@@ -1134,12 +1132,7 @@
 </head>
 <body>
 
-    <!-- Preloader -->
-    <div class="nb-preloader" id="nbPreloader">
-        <div class="nb-preloader-logo">
-            <img src="assets/images/logos/logo.png" alt="Norden Barber Cuenca">
-        </div>
-    </div>
+
 
     <!-- Cookie Banner RGPD -->
     <div class="nb-cookie-banner" id="nbCookieBanner">
@@ -1163,7 +1156,7 @@
         <div class="container">
             <div class="nb-header-inner">
                 <a href="/" class="nb-logo" aria-label="Norden Barber — Inicio">
-                    <img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca">
+                    <img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca" width="355" height="400">
                 </a>
                 <nav aria-label="Navegación principal">
                     <ul class="nb-nav">
@@ -1241,14 +1234,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <div class="nb-about-img-wrap pr-lg-4">
-                        <img src="assets/images/about/about-left.webp" alt="Interior de Norden Barber, barbería en Cuenca" class="nb-about-img-main">
-                        <img src="assets/images/about/about-right.webp" alt="Detalle de servicio en Norden Barber Cuenca" class="nb-about-img-accent">
+                        <img src="assets/images/about/about-left.webp" alt="Interior de Norden Barber, barbería en Cuenca" class="nb-about-img-main" width="642" height="1024">
+                        <img src="assets/images/about/about-right.webp" alt="Detalle de servicio en Norden Barber Cuenca" class="nb-about-img-accent" width="445" height="563">
                         <div class="nb-about-badge">
                             <span class="big">100%</span>
                             <span class="small">Precisión</span>
                         </div>
                         <div style="position:absolute; top:20px; right:20px; z-index:2;">
-                            <img src="assets/images/favicon-logo.png" alt="Norden Barber" style="width:70px;height:70px;border-radius:50%;border:3px solid var(--gold);box-shadow:0 4px 20px rgba(200,169,81,0.4);">
+                            <img src="assets/images/favicon-logo.png" alt="Norden Barber" style="width:70px;height:70px;border-radius:50%;border:3px solid var(--gold);box-shadow:0 4px 20px rgba(200,169,81,0.4);" width="256" height="256">
                         </div>
                     </div>
                 </div>
@@ -1454,7 +1447,7 @@
             </div>
             <div class="nb-gallery-grid">
                 <div class="nb-gallery-item">
-                    <img src="assets/images/gellary/real-cut-1.webp" alt="Corte degradado con reflejos rubios — Norden Barber Cuenca" loading="lazy">
+                    <img src="assets/images/gellary/real-cut-1.webp" alt="Corte degradado con reflejos rubios — Norden Barber Cuenca" loading="lazy" width="828" height="1100">
                     <div class="nb-gallery-overlay">
                         <div class="nb-gallery-overlay-text">
                             <small>Norden Barber · Cuenca</small>
@@ -1463,7 +1456,7 @@
                     </div>
                 </div>
                 <div class="nb-gallery-item">
-                    <img src="assets/images/gellary/real-cut-2.webp" alt="Corte degradado oscuro clásico — Norden Barber Cuenca" loading="lazy">
+                    <img src="assets/images/gellary/real-cut-2.webp" alt="Corte degradado oscuro clásico — Norden Barber Cuenca" loading="lazy" width="826" height="1100">
                     <div class="nb-gallery-overlay">
                         <div class="nb-gallery-overlay-text">
                             <small>Norden Barber · Cuenca</small>
@@ -1472,7 +1465,7 @@
                     </div>
                 </div>
                 <div class="nb-gallery-item">
-                    <img src="assets/images/gellary/real-cut-3.webp" alt="Corte con línea de diseño y fade lateral — Norden Barber Cuenca" loading="lazy">
+                    <img src="assets/images/gellary/real-cut-3.webp" alt="Corte con línea de diseño y fade lateral — Norden Barber Cuenca" loading="lazy" width="825" height="1100">
                     <div class="nb-gallery-overlay">
                         <div class="nb-gallery-overlay-text">
                             <small>Norden Barber · Cuenca</small>
@@ -1481,7 +1474,7 @@
                     </div>
                 </div>
                 <div class="nb-gallery-item">
-                    <img src="assets/images/gellary/real-cut-4.webp" alt="Skin fade muy limpio — Norden Barber Cuenca" loading="lazy">
+                    <img src="assets/images/gellary/real-cut-4.webp" alt="Skin fade muy limpio — Norden Barber Cuenca" loading="lazy" width="1100" height="1100">
                     <div class="nb-gallery-overlay">
                         <div class="nb-gallery-overlay-text">
                             <small>Norden Barber · Cuenca</small>
@@ -1721,7 +1714,7 @@
             <div class="row">
                 <div class="col-lg-4 mb-5">
                     <div class="nb-footer-logo">
-                        <img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca">
+                        <img src="assets/images/logos/logo.png" alt="Norden Barber — Barbería en Cuenca" width="355" height="400">
                     </div>
                     <p class="nb-footer-desc">La barbería de referencia en Cuenca, Castilla-La Mancha. Especialistas en cortes degradados, arreglo de barba y estética masculina premium desde el corazón de Cuenca.</p>
                     <div class="nb-footer-social">
@@ -1781,17 +1774,6 @@
     <script>
     (function() {
         'use strict';
-
-        // Preloader
-        window.addEventListener('load', function() {
-            var preloader = document.getElementById('nbPreloader');
-            if (preloader) {
-                setTimeout(function() {
-                    preloader.classList.add('hidden');
-                    setTimeout(function() { preloader.style.display = 'none'; }, 500);
-                }, 600);
-            }
-        });
 
         // Header scroll
         var header = document.getElementById('nbHeader');
