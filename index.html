@@ -824,14 +824,33 @@
         .nb-map-wrap {
             height: 100%;
             min-height: 420px;
+            display: flex;
+            flex-direction: column;
         }
         .nb-map-wrap iframe {
             width: 100%;
             height: 100%;
+            flex: 1;
             min-height: 420px;
             border: none;
             filter: grayscale(30%);
         }
+        .nb-map-action {
+            min-height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--gold);
+            color: #111;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        .nb-map-action:hover { background: #b8942e; color: #fff; }
 
         /* --- FOOTER --- */
         .nb-footer {
@@ -984,29 +1003,37 @@
         }
         .nb-cookie-reject:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
 
-        /* --- BOTÓN FLOTANTE MÓVIL --- */
-        .nb-fab {
+        /* --- ACCIONES FIJAS MÓVIL --- */
+        .nb-mobile-actions {
             display: none;
             position: fixed;
-            bottom: 24px;
-            right: 20px;
+            bottom: 0;
+            left: 0;
+            right: 0;
             z-index: 9998;
-            background: var(--gold);
-            color: #111;
-            padding: 14px 20px;
-            border-radius: 30px;
-            font-family: 'Oswald', sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            box-shadow: 0 4px 24px rgba(200,169,81,0.4);
-            text-decoration: none;
-            align-items: center;
+            grid-template-columns: 1fr 1fr;
             gap: 8px;
-            transition: all 0.3s;
+            padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+            background: rgba(10,10,10,0.98);
+            border-top: 1px solid rgba(200,169,81,0.35);
+            box-shadow: 0 -6px 24px rgba(0,0,0,0.28);
         }
-        .nb-fab:hover { background: #b8942e; color: #fff; transform: translateY(-2px); }
+        .nb-mobile-action {
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 2px;
+        }
+        .nb-mobile-action.reserve { background: #25D366; color: #fff; }
+        .nb-mobile-action.directions { background: var(--gold); color: #111; }
 
         /* --- WHATSAPP BUTTON --- */
         .nb-btn-whatsapp {
@@ -1045,6 +1072,7 @@
             .nb-hero-stats { flex-wrap: wrap; gap: 24px; }
         }
         @media (max-width: 767px) {
+            body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
             section { padding: 64px 0; }
             .nb-price-card { flex-direction: column; align-items: flex-start; }
             .nb-price-right { width: 100%; justify-content: space-between; }
@@ -1053,7 +1081,7 @@
             .nb-cta .text-lg-right { text-align: left !important; margin-top: 20px; }
             .nb-footer-bottom { flex-direction: column; text-align: center; }
             .nb-footer-legal a:first-child { margin-left: 0; }
-            .nb-fab { display: inline-flex; }
+            .nb-mobile-actions { display: grid; }
             .nb-hero h1 { font-size: clamp(30px, 8vw, 50px); }
             .nb-map-wrap { min-height: 300px; }
             .nb-map-wrap iframe { min-height: 300px; }
@@ -1146,10 +1174,14 @@
         </div>
     </div>
 
-    <!-- Botón flotante móvil -->
-    <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita" target="_blank" rel="noopener" class="nb-fab" aria-label="Escribir por WhatsApp">
-        <i class="fab fa-whatsapp"></i> Reservar cita
-    </a>
+    <div class="nb-mobile-actions" aria-label="Acciones rápidas">
+        <a href="https://wa.me/34632944076?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita" target="_blank" rel="noopener" class="nb-mobile-action reserve" aria-label="Reservar cita por WhatsApp">
+            <i class="fab fa-whatsapp"></i> Reservar
+        </a>
+        <a href="https://maps.app.goo.gl/icMUwnjrd11b27c2A" target="_blank" rel="noopener" class="nb-mobile-action directions" aria-label="Cómo llegar a Norden Barber con Google Maps">
+            <i class="fas fa-location-arrow"></i> Cómo llegar
+        </a>
+    </div>
 
     <!-- HEADER -->
     <header class="nb-header" id="nbHeader">
@@ -1649,6 +1681,9 @@
                             referrerpolicy="no-referrer-when-downgrade"
                             title="Ubicación de Norden Barber en Cuenca, Castilla-La Mancha">
                         </iframe>
+                        <a href="https://maps.app.goo.gl/icMUwnjrd11b27c2A" target="_blank" rel="noopener" class="nb-map-action" aria-label="Abrir la ruta a Norden Barber en Google Maps">
+                            <i class="fas fa-location-arrow"></i> Cómo llegar con Google Maps
+                        </a>
                     </div>
                 </div>
             </div>
